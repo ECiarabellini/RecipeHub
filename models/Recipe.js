@@ -15,6 +15,15 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.TEXT,
             allowNull: false,
         },
+        user_id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+        },
+
+    });
+
+    Recipe.belongsTo(User, {
+        foreignKey: 'user_id',
     });
 
 
