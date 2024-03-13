@@ -37,14 +37,14 @@ try {
 // dashboard page
 //router.get('/dashboard', async (req, res) => {    ///!!!use for testing in Insomnia withoutAuth
 router.get('/dashboard', withAuth, async (req, res) => { 
-const userRecipes = await Post.findAll({
+const userRecipes = await Recipe.findAll({
     where: {
         created_by: req.session.user_id,   //comment out for testing in insomnia !!!
         // created_by: req.body.created_by   //uncomment for testing in insomnia !!!
     }
     });
 
-const recipes = userPosts.map((recipe) => recipe.get({ plain: true }));
+const recipes = userRecipes.map((recipe) => recipe.get({ plain: true }));
 res.render('dashboard', { recipes, logged_in: req.session.logged_in });
 });
 
