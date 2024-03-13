@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fund My Project!</title>
+  <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
-    <header>
-        <h1>{{title}}</h1>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/recipes">Recipes</a></li>
-                {{#if user}}
-                    <li><a href="/profile">Profile</a></li>
-                    <li><a href="/logout">Logout</a></li>
-                {{else}}
-                    <li><a href="/login">Login</a></li>
-                    <li><a href="/signup">Sign up</a></li>
-                {{/if}}
-            </ul>
-        </nav>
+  <div class="flex-column justify-space-around">
+    <header class="display-flex justify-space-between align-center p-2">
+      <h1>
+        <span role="img" aria-label="money">👩‍🍳</span>
+        <a href="/">Welcome to the Recipe Hub</a>
+      </h1>
+      <nav>
+        <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+        <a href="/profile">profile</a> |
+        <button class="no-button" id="logout">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
+      </nav>
     </header>
-    <main>
-        {{{body}}}
+    <main class="container container-fluid mt-5">
+      <!-- Render the sub layout -->
+      {{{ body }}}
     </main>
     <footer>
-        <p>&copy; 2024 Your Recipe Hub</p>
+        <p>&copy; 2024 Recipe Hub</p>
     </footer>
+  </div>
+
+  <!-- Render script for logged in users only -->
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
 </body>
+
 </html>
