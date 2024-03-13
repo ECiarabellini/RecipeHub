@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
       res.redirect('/dashboard');
       return;
     }
-    res.render('dashboard');
+    res.render('login');
 });
   
   
