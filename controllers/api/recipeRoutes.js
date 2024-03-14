@@ -4,15 +4,15 @@ const withAuth = require('../../utils/auth');
 
 
 // CREATE new recipe
-router.post('/', withAuth, async (req, res) => {    // !!!!! comment this out for testing in Insomnia
-//router.post('/', async (req, res) => {   // !!!! uncomment this out for testing in Insomni
+//router.post('/', withAuth, async (req, res) => {    // !!!!! comment this out for testing in Insomnia
+router.post('/', async (req, res) => {   // !!!! uncomment this out for testing in Insomni
     try {
         const newRecipe = await Recipe.create({
             title: req.body.title,
             ingredients: req.body.ingredients,
             instructions: req.body.instructions,
-            //user_id: req.session.user_id,   // !!!!! comment this out for testing in Insomnia
-            user_id: req.body.user_id,       // !!!! uncomment this out for testing in Insomnia
+            user_id: req.session.user_id,   // !!!!! comment this out for testing in Insomnia
+            //user_id: req.body.user_id,       // !!!! uncomment this out for testing in Insomnia
 
         });
         res.status(201).json(newRecipe);
@@ -41,8 +41,28 @@ router.put('/:id', withAuth, async (req, res) => {   // !!!!! comment this out f
 
         res.json(recipe);
     } catch (err) {
-        console.error(err);
-        res.status(500).json({ error: 'Server error' });
+        res.status(500).json(err);
+    }
+});
+
+
+router.delete('/:id', withAuth, async (req, res) => {   // !!!!! comment this out for testing in Insomnia
+//router.delete('/:id', async (req, res) => {   // !!!! uncomment this out for testing in Insomni
+    try {
+        const recipeData = await Recipe.destroy({
+            where: {
+                id: req.params.id,
+            },
+        });
+
+        if (!recipeData) {
+            res.status(404).json({ message: 'No recipe found with this id' });
+            return;
+        }
+
+        res.status(200).json(recipeData);
+    } catch (err) {
+        res.status(500).json(err);
     }
 });
 
