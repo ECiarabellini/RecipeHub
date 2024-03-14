@@ -1,6 +1,12 @@
-<h4>recipe content goes here as well as EDIT and DELETE buttons</h4>
-<h5>EDIT button should include this link: 'href="/api/recipe/{{id}}"'</h5>
+<h4>recipe content goes below as well as EDIT and DELETE buttons</h4>
+<h5>EDIT button should include this link: 'href="recipe/edit/{{id}}"'</h5>
 <h5>DELETE button runs deleteRecipe script; addEventListener to that button</h5>
+
+{{recipe.title}}
+{{recipe.ingredients}}
+{{recipe.instructions}}
+{{format_date recipe.createdAt}} at {{format_time recipe.createdAt}}
+{{format_date recipe.updatedAt}} at {{format_time recipe.updatedAt}}
 
 
 
