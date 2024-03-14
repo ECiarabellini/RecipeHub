@@ -5,14 +5,12 @@ async function newFormHandler(event) {
     const ingredients = document.querySelector('#ingredients').value;
     const recipe_instructions = document.querySelector('#recipe_instructions').value;
 
-  
-  
     const response = await fetch(`/api/recipe`, {
       method: 'POST',
       body: JSON.stringify({
-        recipe_name,
+        title,
         ingredients,
-        recipe_instructions,
+        instructions,
       }),
       headers: {
         'Content-Type': 'application/json',
