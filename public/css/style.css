@@ -22,3 +22,147 @@ header, .project:not(:last-child) {
   font-weight: bold;
   margin-left: -5px;
 }
+
+/* Recipe Hub Website Styles */
+
+/* Adjust font styles */
+/* Center everything on the page */
+body {
+  display:inline;
+  align-items: center; /* Vertically center */
+  height: 100vh; /* Set the height of the body to full viewport height */
+  margin: 0; /* Remove default margin */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  color: #333; /* Darker color for better readability */
+}
+
+/* Wrapper to contain all content */
+.wrapper {
+  text-align: center; /* Center-align content inside the wrapper */
+}
+
+.recipe-hub-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 10px;
+}
+
+
+h1 {
+  font-size: 2.5rem; /* Larger headings for titles */
+  margin: 1rem 0; /* Slightly larger margin for titles */
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem; /* Slightly smaller headings for section titles */
+  margin: 1rem 0; /* Slightly larger margin for section titles */
+}
+
+p {
+  font-size: 1rem; /* Normal font size for paragraphs */
+  line-height: 1.5; /* Improved line height for better readability */
+}
+
+/* Adjust colors */
+a {
+  color: #007bff; /* Blue color for links */
+}
+
+a:hover {
+  color: #0056b3; /* Darker blue color on hover */
+}
+
+/* Adjust button styles */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Adjust container width */
+.container {
+  width: 90%; /* Slightly wider container for content */
+}
+
+/* Adjust form styles */
+form {
+  margin-bottom: 2rem; /* Larger margin bottom for forms */
+}
+
+.form-group {
+  margin-bottom: 1.5rem; /* Larger margin bottom for form groups */
+}
+
+.form-control {
+  width: 100%; /* Full width input fields */
+  padding: 0.5rem; /* Padding for input fields */
+  font-size: 1rem; /* Normal font size for inputs */
+  border: 1px solid #ced4da; /* Border color for inputs */
+  border-radius: 0.25rem; /* Border radius for inputs */
+}
+
+.form-control:focus {
+  outline: none; /* Remove focus outline */
+  border-color: #007bff; /* Border color on focus */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Focus shadow */
+}
+
+/* Adjust responsive breakpoints */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px; /* Adjust max-width for smaller screens */
+  }
+}
+
+/* Adjust form layout for medium screens and above */
+@media (min-width: 768px) {
+  .col-md-6 {
+    display: inline;
+    justify-content: center;
+  }
+}
+
+
+.container.container-fluid {
+  /* Styles for the container */
+  max-width: 100%; /* Ensure the container spans the full width of its parent */
+  padding-right: 15px; /* Add padding to align with Bootstrap's container */
+  padding-left: 15px; /* Add padding to align with Bootstrap's container */
+  margin-right: auto; /* Center the container horizontally */
+  margin-left: auto; /* Center the container horizontally */
+  display: flex; /* Use flexbox */
+  justify-content: space-around; /* Distribute items evenly with space around them */
+  align-items: center; /* Center the content vertically */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+.container.container-fluid .col-md-6 {
+  /* Optional: Adjust the width of each column */
+  width: 50%; /* Each column takes up 50% of the container width */
+  padding: 50px;
+}
+
+.mt-5 {
+  /* Styles for margin-top */
+  margin-top: 3rem; /* Adjust margin-top as needed */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}

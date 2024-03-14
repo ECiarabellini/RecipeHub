@@ -4,8 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fund My Project!</title>
-  <link rel="stylesheet" href="/css/jass.css">
+  <title>Recipe Hub</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -22,16 +21,14 @@
         <a href="/profile">profile</a> |
         <button class="no-button" id="logout">logout</button>
         {{else}}
-        <a href="/login">login</a>
         {{/if}}
       </nav>
     </header>
     <main class="container container-fluid mt-5">
-      <!-- Render the sub layout -->
       {{{ body }}}
     </main>
     <footer>
-        <p>&copy; 2024 Recipe Hub</p>
+     <p class="recipe-hub-text">&copy; 2024 Recipe Hub</p>
     </footer>
   </div>
 
