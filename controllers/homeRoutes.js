@@ -47,6 +47,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
     res.render('dashboard', { recipes, logged_in: req.session.logged_in });
 });
 
+
 // new recipe page
 router.get('/new', withAuth, async (req, res) => { 
     res.render('newRecipe', { logged_in: req.session.logged_in });

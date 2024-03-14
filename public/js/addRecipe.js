@@ -1,9 +1,9 @@
 async function newFormHandler(event) {
     event.preventDefault();
   
-    const recipe_name = document.querySelector('#recipe_name').value;
+    const title = document.querySelector('#recipe-title').value;
     const ingredients = document.querySelector('#ingredients').value;
-    const recipe_instructions = document.querySelector('#recipe_instructions').value;
+    const instructions = document.querySelector('#instructions').value;
 
     const response = await fetch(`/api/recipe`, {
       method: 'POST',
