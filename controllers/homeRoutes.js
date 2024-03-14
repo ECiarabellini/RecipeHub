@@ -39,8 +39,8 @@ try {
 router.get('/dashboard', withAuth, async (req, res) => { 
 const userRecipes = await Recipe.findAll({
     where: {
-        created_by: req.session.user_id,   //comment out for testing in insomnia !!!
-        // created_by: req.body.created_by   //uncomment for testing in insomnia !!!
+        user_id: req.session.user_id,   //comment out for testing in insomnia !!!
+        // user_id: req.body.created_by   //uncomment for testing in insomnia !!!
     }
     });
 
