@@ -1,4 +1,4 @@
-async function removeFormHandler(event) {
+async function removeRecipeHandler(event) {
     event.preventDefault();
   
     // Extract the recipe ID from the form or any other source.
@@ -12,13 +12,13 @@ async function removeFormHandler(event) {
     });
   
     if (response.ok) {
-      document.location.replace('/');
+      document.location.replace('/dashboard');
     } else {
       alert('Failed to remove recipe');
     }
   }
   
   document
-    .querySelector('.remove-recipe-form')
-    .addEventListener('submit', removeFormHandler);
+    .querySelector('.remove-recipe')
+    .addEventListener('click', removeRecipeHandler);
   
