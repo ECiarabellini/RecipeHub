@@ -4,8 +4,8 @@ const withAuth = require('../../utils/auth');
 
 
 // CREATE new recipe
-//router.post('/', withAuth, async (req, res) => {    // !!!!! comment this out for testing in Insomnia
-router.post('/', async (req, res) => {   // !!!! uncomment this out for testing in Insomni
+router.post('/', withAuth, async (req, res) => {    // !!!!! comment this out for testing in Insomnia
+//router.post('/', async (req, res) => {   // !!!! uncomment this out for testing in Insomni
     try {
         const newRecipe = await Recipe.create({
             title: req.body.title,
