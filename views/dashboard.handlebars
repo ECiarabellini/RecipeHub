@@ -1,11 +1,15 @@
-{{#if recipes}}
-    <h3>Your Recipes:</h3>
+<div class="button-container">
+    <button onclick="window.location.href='/new'" class="btn btn-primary">Add Recipe</button>
+</div>
 
-    <!-- For each recipe, the recipe-details partial is used to render the recipe title -->
-    {{#each recipes as |recipe|}}
-    {{> recipeTitles}}
-    {{/each}}
+<div class="recipe-container">
+    {{#if recipes}}
+        <h3>Your Recipes:</h3>
+        <div class="recipe-list">
+            {{#each recipes as |recipe|}}
+                {{> recipeTitles}}
+            {{/each}}
+        </div>
+    {{/if}}
+</div>
 
-{{/if}}
-
-<button onclick="window.location.href='/new'" class="btn btn-primary">Add Recipe</button>
