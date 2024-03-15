@@ -1,7 +1,26 @@
-<h4>------New Recipe Form goes here------</h4>
+<main class="container container-fluid mt-5">
+  <h3>Add a New Recipe</h3>
 
-{{recipe.title}}
-{{recipe.ingredients}}
-{{recipe.instructions}}
+  <!-- Form to add a new recipe -->
+  <form id="newRecipeForm" class="new-recipe-form">
+    <div class="form-group">
+      <label for="recipe-title">Title:</label>
+      <input type="text" id="recipe-title" name="recipe-title" class="form-control">
+    </div>
 
-  <script src="/js/addRecipe.js"></script>
+    <div class="form-group">
+      <label for="ingredients">Ingredients:</label>
+      <textarea id="ingredients" name="ingredients" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="instructions">Instructions:</label>
+      <textarea id="instructions" name="instructions" class="form-control"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Recipe</button>
+  </form>
+</main>
+
+<!-- Include your addRecipe.js script -->
+<script src="./js/addRecipe.js"></script>

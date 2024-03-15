@@ -144,16 +144,15 @@ form {
   padding-left: 15px; /* Add padding to align with Bootstrap's container */
   margin-right: auto; /* Center the container horizontally */
   margin-left: auto; /* Center the container horizontally */
-  display: flex; /* Use flexbox */
-  justify-content: space-around; /* Distribute items evenly with space around them */
-  align-items: center; /* Center the content vertically */
-  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  display: table; /* Use flexbox */
+  flex-direction: column; /* Set flex direction to column */
+  align-items: center; /* Center items horizontally */
 }
 
-.container.container-fluid .col-md-6 {
-  /* Optional: Adjust the width of each column */
-  width: 50%; /* Each column takes up 50% of the container width */
-  padding: 50px;
+.container.container-fluid .row {
+  display: flex; /* Use flexbox */
+  justify-content: space-around; /* Distribute items evenly with space around them */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
 }
 
 .mt-5 {
@@ -164,4 +163,28 @@ form {
 .row {
   display: flex;
   justify-content: space-between;
+}
+
+.button-container {
+    text-align: center; /* Center the button horizontally */
+    margin-bottom: 20px; /* Add some spacing between the button container and the recipe container */
+}
+
+.recipe-container {
+   text-align: center;
+    padding: 20px; /* Add some padding to the recipe container */
+}
+
+/* Adjust spacing between recipes */
+.recipe-list {
+    display: inline-block; /* Use flexbox for the recipes list */
+    flex-wrap: wrap; /* Allow recipes to wrap to the next line if needed */
+    gap: 20px; /* Add spacing between individual recipes */
+    margin-top: 20px; /* Add some spacing between the button and the recipes */
+}
+.recipe-list .line-recipe {
+    margin: 10px; /* Add some spacing between individual recipes */
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 200px; /* Set a fixed width for each recipe card */
 }
