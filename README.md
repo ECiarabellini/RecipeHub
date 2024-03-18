@@ -62,7 +62,7 @@ To run:
 
 ## Credits
 
-- Much of my content was adapted from project 14, which itself was adapted from class exercises - Emily
+- Much of my content was adapted from project 14, which itself was adapted from class exercises - Emily, Nina Buscemi
 
 ## License
 
