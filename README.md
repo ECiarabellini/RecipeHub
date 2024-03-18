@@ -1,4 +1,25 @@
+
 # RecipeHub
+
+## User Story 
+As a cooking enthusiast, I want to easily discover, save, and share recipes from a variety of cuisines, so I can explore new dishes and improve my culinary skills.
+
+## Acceptance Criteria
+GIVEN a user wants to access the application,
+WHEN the user navigates to the signup page,
+THEN the user can create a new account by providing a username, email, and password.
+GIVEN a registered user wants to log in,
+WHEN the user enters their credentials on the login page,
+THEN the user is authenticated and gains access to their account.
+WHEM the user logs in'
+THEN they are presented with a button to Add Recipe and a list of previously add recipes.
+WHEN a user chooses to add a recipe,
+THEN they are presented with form to enter the necessary information.
+WHEN the user creates, edits, or deletes a recipe,
+THEN the changes are reflected in the user's account and are accessible to the user.
+WHEN a user wants to explore recipes previoulsy created,
+THEN the user can view a list of recipes and access individual recipe details.
+
 
 ## Description
 
