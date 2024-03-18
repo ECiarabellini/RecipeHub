@@ -12,6 +12,10 @@ THEN the user can create a new account by providing a username, email, and passw
 GIVEN a registered user wants to log in,
 WHEN the user enters their credentials on the login page,
 THEN the user is authenticated and gains access to their account.
+WHEM the user logs in'
+THEN they are presented with a button to Add Recipe and a list of previously add recipes.
+WHEN a user chooses to add a recipe,
+THEN they are presented with form to enter the necessary information.
 WHEN the user creates, edits, or deletes a recipe,
 THEN the changes are reflected in the user's account and are accessible to the user.
 WHEN a user wants to explore recipes previoulsy created,
