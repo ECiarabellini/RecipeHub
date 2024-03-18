@@ -7,7 +7,9 @@
         <h3>Your Recipes:</h3>
         <div class="recipe-list">
             {{#each recipes as |recipe|}}
-                {{> recipeTitles}}
+                {{#if recipe.title}}
+                    {{> recipeTitles}}
+                {{/if}}
             {{/each}}
         </div>
     {{/if}}
