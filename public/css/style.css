@@ -189,3 +189,9 @@ form {
     border: 1px solid #ccc;
     width: 200px; /* Set a fixed width for each recipe card */
 }
+
+.dates {
+  /* font-style: italic; */
+  color: #333;
+  font-size: 75%;
+}
