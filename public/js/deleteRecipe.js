@@ -1,8 +1,10 @@
 async function removeRecipeHandler(event) {
     event.preventDefault();
-  
-    // Extract the recipe ID from the form or any other source.
-    const recipeId = document.querySelector('#recipe_id_to_delete').value;
+    
+    // window.location gives us access to the URL. We then use the .split() method to access the number at the end of the URL and set that equal to recipeId.
+    const recipeId = window.location.toString().split('/')[
+      window.location.toString().split('/').length - 1
+      ];
   
     const response = await fetch(`/api/recipe/${recipeId}`, {
       method: 'DELETE',
