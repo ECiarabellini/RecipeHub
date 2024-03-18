@@ -43,6 +43,12 @@ To run:
 
 - Much of my content was adapted from project 14, which itself was adapted from class exercises - Emily
 
+- I took reference from our classes week 14 folders to help implement the functions that we would need in order for our application. I also used chatGBT to help explain and problem solve minor issues - Connor
+
+
+
+
+
 ## License
 
 MIT License
