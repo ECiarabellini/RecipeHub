@@ -62,7 +62,9 @@ To run:
 
 ## Credits
 
-- Much of my content was adapted from project 14, which itself was adapted from class exercises - Emily, Nina Buscemi
+- Much of my content was adapted from project 14, which itself was adapted from class exercises - Emily 
+
+- Worked on the handlebars layout and polished the UI using CSS - Nina Buscemi
 
 ## License
 
