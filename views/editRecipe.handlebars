@@ -1,4 +1,4 @@
-<h4>Edit recipe form goes here</h4>
+<!--<h4>Edit recipe form goes here</h4>
 <div>Class on the form element needs to inclue "edit-recipe-form"</div>
 
 Make sure element IDs match those specified in editRecipe.js
@@ -7,11 +7,28 @@ Put these in various form elements:
 {{recipe.ingredients}}
 {{recipe.instructions}}
 
+<main class="container container-fluid mt-5">
+  <h3>Edit Recipe</h3>
 
+  <!-- Form to edit a recipe -->
+  <form id="editRecipeForm" class="edit-recipe-form">
+    <div class="form-group">
+      <label for="recipe-title">Title:</label>
+      <input type="text" id="recipe-title" name="recipe-title" class="form-control">
+    </div>
 
+    <div class="form-group">
+      <label for="ingredients">Ingredients:</label>
+      <textarea id="ingredients" name="ingredients" class="form-control"></textarea>
+    </div>
 
+    <div class="form-group">
+      <label for="instructions">Instructions:</label>
+      <textarea id="instructions" name="instructions" class="form-control"></textarea>
+    </div>
 
-
-
+    <button type="submit" class="btn btn-primary">Add Recipe</button>
+  </form>
+</main>
 
   <script src="/js/editRecipe.js"></script>

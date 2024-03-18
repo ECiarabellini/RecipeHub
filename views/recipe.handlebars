@@ -1,4 +1,4 @@
-<h4>recipe content goes below as well as EDIT and DELETE buttons</h4>
+<!--<h4>recipe content goes below as well as EDIT and DELETE buttons</h4>
 <h5>EDIT button should include this link: 'href="recipe/edit/{{id}}"'</h5>
 <h5>DELETE button runs deleteRecipe script; addEventListener to that button</h5>
 
@@ -10,14 +10,16 @@
 {{recipe.instructions}}
 {{format_date recipe.createdAt}} at {{format_time recipe.createdAt}}
 {{format_date recipe.updatedAt}} at {{format_time recipe.updatedAt}}
+-->
 
-
-
-
-
-
-
-
-
-
+<h4>Recipe: {{recipe.title}}</h4>
+<h5>Ingredients:</h5>
+<p>{{recipe.ingredients}}</p>
+<h5>Instructions:</h5>
+<p>{{recipe.instructions}}</p>
+<p>Created at {{format_date recipe.createdAt}} at {{format_time recipe.createdAt}}</p>
+<p>Last updated at {{format_date recipe.updatedAt}} at {{format_time recipe.updatedAt}}</p>
+<a href="recipe/edit/{{recipe.id}}" class="btn btn-primary">Edit</a>
+<button class="btn btn-danger" id="delete-recipe-button">Delete</button>
 <script src="/js/deleteRecipe.js"></script>
+
