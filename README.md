@@ -1,10 +1,11 @@
-
 # RecipeHub
 
-## User Story 
+## User Story
+
 As a cooking enthusiast, I want to easily discover, save, and share recipes from a variety of cuisines, so I can explore new dishes and improve my culinary skills.
 
 ## Acceptance Criteria
+
 GIVEN a user wants to access the application,
 WHEN the user navigates to the signup page,
 THEN the user can create a new account by providing a username, email, and password.
@@ -19,7 +20,6 @@ WHEN the user creates, edits, or deletes a recipe,
 THEN the changes are reflected in the user's account and are accessible to the user.
 WHEN a user wants to explore recipes previoulsy created,
 THEN the user can view a list of recipes and access individual recipe details.
-
 
 ## Description
 
@@ -49,7 +49,7 @@ Future development would include:
 ## Installation
 
 - Repo: [GitHub Repo](https://github.com/ECiarabellini/RecipeHub/)
-- Deployed to Heroku: [Heroku page]()
+- Deployed to Heroku: [Heroku page](https://protected-stream-88252-41be40b06e65.herokuapp.com/)
 
 ## Usage
 
@@ -57,7 +57,7 @@ To run:
 
 - Run 'npm install' from the command line
 - Open mysql. Type source db/schema.sql. Exit mysql.
-- Run 'node seeds/index.js' from the command line to seed the database
+- Run 'node seeds/index.js' from the command line to seed the database.
 - Run 'npm start' to start the server.
 
 ## Credits
