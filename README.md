@@ -66,6 +66,12 @@ To run:
 
 - Used class examples and activities to gain insight and inspiration for creating the layouts - Nina Buscemi
 
+- I took reference from our classes week 14 folders to help implement the functions that we would need in order for our application. I also used chatGBT to help explain and problem solve minor issues - Connor
+
+
+
+
+
 ## License
 
 MIT License
