@@ -64,7 +64,7 @@ To run:
 
 - Much of my content was adapted from project 14, which itself was adapted from class exercises - Emily 
 
-- Worked on the handlebars layout and polished the UI using CSS - Nina Buscemi
+- Used class examples and activities to gain insight and inspiration for creating the layouts - Nina Buscemi
 
 ## License
 
