@@ -1,6 +1,6 @@
 const recipeId = window.location.toString().split('/')[
   window.location.toString().split('/').length - 1
-  ];
+];
 
 async function removeRecipeHandler(event) {
     event.preventDefault();
@@ -22,7 +22,7 @@ async function removeRecipeHandler(event) {
   }
   
   document
-    .querySelector('.remove-recipe')
+    .getElementById('delete-recipe-button')
     .addEventListener('click', removeRecipeHandler);
   
     
