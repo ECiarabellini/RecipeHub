@@ -68,6 +68,8 @@ To run:
 
 - I took reference from our classes week 14 folders to help implement the functions that we would need in order for our application. I also used chatGBT to help explain and problem solve minor issues - Connor
 
+- I utilized examples from class content as well as learning assist and chatGBT - Katelynn
+
 
 
 
