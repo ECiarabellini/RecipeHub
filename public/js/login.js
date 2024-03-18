@@ -17,7 +17,7 @@ const loginFormHandler = async (event) => {
             // If successful, redirect the browser to the homepage
             document.location.replace('/');
         } else {
-            alert(response.statusText);
+            alert("Invalid username or password. Please try again.");
         }
     }
 };
@@ -38,7 +38,9 @@ const signupFormHandler = async (event) => {
     if (response.ok) {
         document.location.replace('/');
     } else {
-        alert(response.statusText);
+        // alert(response.statusText, "test");
+        alert("Please ensure password is at least 8 characters.");
+
     }
     }
 };
